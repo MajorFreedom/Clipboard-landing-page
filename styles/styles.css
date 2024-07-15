@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+
+header {
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+
+    background: url(" ../images/bg-header-desktop.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    margin-bottom: 8em;
+}
+
+p {
+    color: rgb(140, 140, 140);
+    line-height: 180%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 600; 
+    color: rgb(80, 80, 80);
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header .headline-container {
+    max-width: 40%;
+}
+
+.buttons a {
+    display: inline-block;
+    border-radius: 30px;
+    padding: .8em 2.4em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.ios {
+    background-color: #26BBA4;
+}
+
+.mac {
+    background-color: #4f65df;
+}
+
+
+
+/* Header and General */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 8em;
+    
+}
+
+.section-headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    width: 100%;
+
+}
+
+.section-headlines p {
+    width: 40%;
+}
+
+.advantages-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10em;
+}
+
+
+.advantages {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.advantage-item h3{
+    margin-bottom: .5em;
+}
+
+/* Advantages Section */
+
+.workflow-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.workflow-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 23%;
+}
+
+.workflow-item h3 {
+    margin-bottom: .5em;
+}
+
+/* Workflow Section */
+
+
+.companies-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Partners Section */
+
+
+#product-download {
+    gap: 2em;
+}
+
+/* Last Section */
+footer {
+    background-color: rgb(245, 245, 245);
+}
+
+.clipboard-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2em;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    width: 50%;
+}
+
+footer nav > a {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+
+
+.footer-logo {
+    max-width: 4em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+/* Footer */
+
+@media screen and (max-width: 64em) {
+    main {
+        margin: 0 2em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        background: url("../images/bg-header-mobile.png") no-repeat;
+        background-size: cover;
+    }
+
+    header .headline-container {
+        max-width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .section-headlines p {
+        width: 100%;
+    }
+
+    .advantages-container {
+        flex-direction: column;
+    }
+
+    .advantages {
+        width: 75%;
+    }
+
+    .advantage-item {
+        text-align: center;
+    }
+
+    
+
+    .workflow-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4em;
+        text-align: center;
+    }
+
+    .workflow-item {
+        width: 100%;
+    }
+
+    .companies-container {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .clipboard-footer-container {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+    header {
+        background: url("../images/bg-header-desktop.png") no-repeat;
+        background-size: cover;
+    }
+}
